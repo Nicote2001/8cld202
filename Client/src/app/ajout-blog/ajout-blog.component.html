@@ -1,0 +1,45 @@
+<p>ajout-blog works!</p>
+<h1 class="inputAccount">AJOUTER ARTICLE</h1>
+<div style="width: 50rem;">
+    <div class="form-outline mb-4">
+      <label class="form-label" for="form1Example13">nom</label>
+        <input type="text" id="form1Example13" class="form-control form-control-lg active" [(ngModel)]="nom" />
+        <div class="form-notch">
+          <div class="form-notch-leading" style="width: 9px; "></div>
+          <div class="form-notch-middle" style="width: 65px; "></div>
+          <div class="form-notch-trailing"></div>
+        </div>
+      </div>
+      <div class="form-outline mb-4">
+        <label class="form-label" for="form1Example13">text</label>
+        <input type="text" id="form1Example13" class="form-control form-control active" [(ngModel)]="desc" />
+        <div class="form-notch">
+          <div class="form-notch-leading" style="width: 9px; "></div>
+          <div class="form-notch-middle" style="width: 65px; "></div>
+          <div class="form-notch-trailing"></div>
+        </div>
+      </div>
+      <div class="form-outline mb-4">
+        <label class="form-label" for="form1Example13">Prix</label>
+        <input type="text" id="form1Example13" class="form-control form-control-lg active" [(ngModel)]="prix" />
+        <div class="form-notch">
+          <div class="form-notch-leading" style="width: 9px; "></div>
+          <div class="form-notch-middle" style="width: 65px; "></div>
+          <div class="form-notch-trailing"></div>
+        </div>
+      </div>
+      <div class="form-outline mb-4">
+        <label class="form-label" for="form1Example13">qty</label>
+        <input type="text" id="form1Example13" class="form-control form-control-lg active" [(ngModel)]="qty" />
+        <div class="form-notch">
+          <div class="form-notch-leading" style="width: 9px; "></div>
+          <div class="form-notch-middle" style="width: 65px; "></div>
+          <div class="form-notch-trailing"></div>
+        </div>
+      </div>
+
+</div>
+  <button type="button" class="btn btn-warning" (click)="save()">
+    Save
+  </button>
+

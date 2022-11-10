@@ -28,4 +28,14 @@ export class ProduitService {
         console.log("why",nom);
         return this.http.delete<any>(`${this.baseUri}/delete/`+nom);
     }
+
+    getProductByName(name : string)
+    {
+        return this.http.get<any>(`${this.baseUri}/getProductByName/`+name);
+    }
+
+    updateProduit(produit : Produit)
+    {
+        return this.http.put<any>(`${this.baseUri}/update`,produit);
+    }
 }

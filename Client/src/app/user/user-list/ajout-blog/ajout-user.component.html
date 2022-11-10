@@ -1,9 +1,9 @@
 <p>ajout-blog works!</p>
-<h1 class="inputAccount">AJOUTER ARTICLE</h1>
+<h1 class="inputAccount">AJOUTER USER</h1>
 <div style="width: 50rem;">
     <div class="form-outline mb-4">
       <label class="form-label" for="form1Example13">nom</label>
-        <input type="text" id="form1Example13" class="form-control form-control-lg active" [(ngModel)]="nom" />
+        <input type="text" id="form1Example13" class="form-control form-control-lg active" [(ngModel)]="username" />
         <div class="form-notch">
           <div class="form-notch-leading" style="width: 9px; "></div>
           <div class="form-notch-middle" style="width: 65px; "></div>
@@ -11,8 +11,8 @@
         </div>
       </div>
       <div class="form-outline mb-4">
-        <label class="form-label" for="form1Example13">text</label>
-        <input type="text" id="form1Example13" class="form-control form-control active" [(ngModel)]="desc" />
+        <label class="form-label" for="form1Example13">nom</label>
+        <input type="text" id="form1Example13" class="form-control form-control active" [(ngModel)]="nom" />
         <div class="form-notch">
           <div class="form-notch-leading" style="width: 9px; "></div>
           <div class="form-notch-middle" style="width: 65px; "></div>
@@ -20,8 +20,8 @@
         </div>
       </div>
       <div class="form-outline mb-4">
-        <label class="form-label" for="form1Example13">Prix</label>
-        <input type="text" id="form1Example13" class="form-control form-control-lg active" [(ngModel)]="prix" />
+        <label class="form-label" for="form1Example13">prenom</label>
+        <input type="text" id="form1Example13" class="form-control form-control-lg active" [(ngModel)]="prenom" />
         <div class="form-notch">
           <div class="form-notch-leading" style="width: 9px; "></div>
           <div class="form-notch-middle" style="width: 65px; "></div>
@@ -29,8 +29,8 @@
         </div>
       </div>
       <div class="form-outline mb-4">
-        <label class="form-label" for="form1Example13">qty</label>
-        <input type="text" id="form1Example13" class="form-control form-control-lg active" [(ngModel)]="qty" />
+        <label class="form-label" for="form1Example13">age</label>
+        <input type="text" id="form1Example13" class="form-control form-control-lg active" [(ngModel)]="age" />
         <div class="form-notch">
           <div class="form-notch-leading" style="width: 9px; "></div>
           <div class="form-notch-middle" style="width: 65px; "></div>
@@ -42,5 +42,4 @@
   <button type="button" class="btn btn-warning" (click)="save()">
     Save
   </button>
-
 

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Article } from '../object/article';
 import { Produit } from '../object/produit';
 import { User } from '../object/user';
@@ -16,7 +17,7 @@ export class HomeComponent implements OnInit {
   produits : Produit[];
   users : User[];
 
-  constructor(private userService : UserService, private produitService : ProduitService)
+  constructor(private userService : UserService, private produitService : ProduitService, private router: Router)
   {
     this.getarticlesAndUser();
   }
@@ -52,6 +53,11 @@ export class HomeComponent implements OnInit {
   {
     await this.calldeleteProduit(nom);
     await this.getarticlesCall();
+  }
+
+  GoToUpdate(nom:string)
+  {
+    this.router.navigateByUrl('/modifier/'+nom);
   }
 
   async calldeleteProduit(nom : string)

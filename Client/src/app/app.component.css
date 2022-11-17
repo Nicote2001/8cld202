@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files 
+Color scheme
+#871528 red
+#1C3B3D blue
+#5CADA0 light blue
+#DADAC9 white-orange
+#D4A063 orange  c59053
+*/
+body {
+    background-color: #DADAC9;
+    }
+         
+   .navbar-custom {
+    background-color: #c59053;
+}
+ 
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text,
+.navbar-custom .nav-link {
+    color: #DADAC9;
+}

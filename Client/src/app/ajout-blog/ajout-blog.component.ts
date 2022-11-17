@@ -29,7 +29,7 @@ export class AjoutBlogComponent implements OnInit {
     this.produitService.AddProduit(item).subscribe(data => {
       if(data === true)
       {
-        alert("InsertionRéussie");
+        alert("Le produit a été ajouté!");
       }
     });
   }

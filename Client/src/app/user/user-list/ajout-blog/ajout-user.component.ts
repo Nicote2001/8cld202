@@ -28,7 +28,7 @@ export class AjoutUserComponent implements OnInit {
     this.produitService.AddUser(item).subscribe(data => {
       if(data === true)
       {
-        alert("InsertionRéussie");
+        alert("Le produit a été ajouté!");
       }
     });
   }

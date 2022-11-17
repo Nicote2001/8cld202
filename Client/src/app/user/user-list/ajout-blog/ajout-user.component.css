@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files 
+Color scheme
+#871528 red
+#1C3B3D blue
+#5CADA0 light blue
+#DADAC9 white-orange
+#D4A063 orange
+*/
+.btn-primary {
+    background-color: #5CADA0 !important;
+}
+.btn-primary:hover {
+    background-color: #1C3B3D !important;
+}
+
+ .btn-primary:active{
+    background-color: #1C3B3D !important;
+}
+
+.btn-primary:visited {
+    background-color: #1C3B3D !important;
+}

@@ -52,6 +52,7 @@ export class HomeComponent implements OnInit {
   async deleteProduit(nom:string)
   {
     await this.calldeleteProduit(nom);
+    await this.delay(1000);
     await this.getarticlesCall();
   }
 
@@ -68,4 +69,10 @@ export class HomeComponent implements OnInit {
       alert("réussie");
     });
   }
+
+  
+ delay(ms: number) {
+  return new Promise( resolve => setTimeout(resolve, ms) );
+}
+
 }
